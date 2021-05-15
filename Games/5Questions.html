@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      var guessCount=1;
+      var answer2
+      console.log(answer2);
+      var guess;
+
+      function gaming(){
+        if (answer2 == undefined) {
+          answer2  = Math.floor(Math.random() * 100) + 1;
+        }
+        guess=Number(document.getElementById("text").value);
+        console.log(answer2);
+        console.log(guess);
+        console.log(answer2>guess);
+        console.log(guessCount);
+        if (answer2 > guess) {
+          alert("up");
+          console.log("up");
+          guessCount+=1;
+        }else if (answer2 < guess) {
+          alert("down");
+          console.log("down");
+          guessCount+=1;
+        }else if (answer2 == guess) {
+          alert("CORRECT");
+          console.log("correct");
+          guessCount = 0;
+          var answer2 = Math.floor(Math.random() * 101);
+        }
+
+        if (guessCount>5) {
+          alert("You're all out of guesses!");
+          guessCount = 0;
+          console.log("out of guesses");
+          var answer2 = Math.floor(Math.random() * 101);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="text">
+    <input type="button" value="Guess" onclick="gaming()">
+  </body>
+</html>
