@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .btn{
+        background-color: #F4D03F;
+        background: url('board.png') no-repeat;
+        margin: -3px;
+        padding: 0;
+        height: 30px;
+        width: 30px;
+        outline: none;
+        border: none;
+      }
+      body {
+        margin:0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rowall">
+      <div id="row" class="row1">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r1_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r1_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r1_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r1_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r1_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r1_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r1_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r1_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r1_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r1_10" type="button">
+      </div>
+      <div id="row" class="row2">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r2_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r2_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r2_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r2_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r2_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r2_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r2_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r2_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r2_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r2_10" type="button">
+      </div>
+      <div id="row" class="row3">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r3_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r3_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r3_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r3_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r3_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r3_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r3_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r3_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r3_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r3_10" type="button">
+      </div>
+      <div id="row" class="row4">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r4_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r4_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r4_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r4_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r4_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r4_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r4_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r4_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r4_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r4_10" type="button">
+      </div>
+      <div id="row" class="row5">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r5_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r5_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r5_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r5_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r5_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r5_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r5_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r5_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r5_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r5_10" type="button">
+      </div>
+      <div id="row" class="row6">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r6_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r6_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r6_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r6_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r6_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r6_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r6_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r6_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r6_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r6_10" type="button">
+      </div>
+      <div id="row" class="row7">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r7_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r7_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r7_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r7_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r7_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r7_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r7_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r7_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r7_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r7_10" type="button">
+      </div>
+      <div id="row" class="row8">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r8_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r8_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r8_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r8_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r8_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r8_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r8_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r8_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r8_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r8_10" type="button">
+      </div>
+      <div id="row" class="row9">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r9_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r9_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r9_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r9_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r9_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r9_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r9_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r9_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r9_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r9_10" type="button">
+      </div>
+      <div id="row" class="row10">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r10_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r10_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r10_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r10_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r10_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r10_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r10_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r10_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r10_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r10_10" type="button">
+      </div>
+      <div id="row" class="row11">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r11_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r11_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r11_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r11_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r11_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r11_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r11_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r11_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r11_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r11_10" type="button">
+      </div>
+      <div id="row" class="row12">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r12_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r12_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r12_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r12_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r12_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r12_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r12_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r12_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r12_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r12_10" type="button">
+      </div>
+      <div id="row" class="row13">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r13_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r13_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r13_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r13_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r13_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r13_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r13_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r13_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r13_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r13_10" type="button">
+      </div>
+      <div id="row" class="row14">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r14_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r14_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r14_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r14_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r14_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r14_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r14_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r14_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r14_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r14_10" type="button">
+      </div>
+      <div id="row" class="row15">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r15_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r15_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r15_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r15_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r15_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r15_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r15_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r15_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r15_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r15_10" type="button">
+      </div>
+      <div id="row" class="row16">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r16_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r16_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r16_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r16_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r16_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r16_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r16_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r16_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r16_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r16_10" type="button">
+      </div>
+      <div id="row" class="row17">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r17_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r17_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r17_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r17_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r17_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r17_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r17_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r17_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r17_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r17_10" type="button">
+      </div>
+      <div id="row" class="row18">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r18_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r18_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r18_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r18_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r18_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r18_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r18_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r18_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r18_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r18_10" type="button">
+      </div>
+      <div id="row" class="row19">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r19_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r19_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r19_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r19_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r19_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r19_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r19_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r19_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r19_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r19_10" type="button">
+      </div>
+      <div id="row" class="row20">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r20_1" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r20_2" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r20_3" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r20_4" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r20_5" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r20_6" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r20_7" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r20_8" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r20_9" type="button">
+        <input class="btn" style="background:url('board.png') no-repeat" id="r20_10" type="button">
+      </div>
+  </body>
+  <script type="text/javascript">
+    //NOTES:
+      //note 1: use (variable name).background="url('1.png')" no-repeat to change background
+      //note 2: use setTimeout(function(){console.log("log");); }, 3000); to make it wait 3 seconds (change the 3000 for different delays)
+    //GAME LOGIC:
+      //overwrite each bgArray thing with their correct board type and then replace all the buttons every single frame
+      //check if there is anything using difArray and adding 10 to current location(use the fact that difArray stores true/false in an if statement)
+      //make while thing run at certain intervals, and only make it move every secon using count variable
+      //call spawnPiece when there is nowhere to go
+      //every time count variable reaches certain number, blocks all move down, replacing all the Array variables with correct things
+      //
+    //BUGS TO FIX:
+      //tetris piece flickers when summoneed - ?
+
+    var bgArray=[];//stores all the styles to easily change bg of something
+    var styleArray=[];//stores all backgrounds for easy replacing
+    var difArray=[];//stores all the numbers of blocks with a different
+    var permArray=[];//stores all permanant blocks
+    var curArray=[];//stores the ids of the current blocks
+    var count=0;
+    var temp2;
+    var temp=true;
+    for(var i=1;i<21;i++){
+      for(var r=1;r<11;r++){
+        styleArray[count]=document.getElementById('r'+i+"_"+r).style;
+        bgArray[count]="board.png";
+        difArray[count]=false
+        curArray[count]=null;
+        count+=1;
+      }
+    }
+    function spawnPiece(n){
+      if (n==1) {
+        styleArray[3].background="url('1.png')";
+        bgArray[3]='1.png';
+        difArray[3]=true;
+        curArray[3]=styleArray[3];
+        styleArray[4].background="url('1.png')";
+        bgArray[4]='1.png';
+        difArray[4]=true;
+        curArray[4]=styleArray[4];
+        styleArray[5].background="url('1.png')";
+        bgArray[5]='1.png';
+        difArray[5]=true;
+        curArray[5]=styleArray[5];
+        styleArray[6].background="url('1.png')";
+        bgArray[6]='1.png';
+        difArray[6]=true;
+        curArray[6]=styleArray[6];
+      }else if (n==2) {
+        styleArray[3].background="url('2.png')";
+        bgArray[3]='2.png';
+        difArray[3]=true;
+        curArray[3]=styleArray[3];
+        styleArray[13].background="url('2.png')";
+        bgArray[13]='2.png';
+        difArray[13]=true;
+        curArray[13]=styleArray[13];
+        styleArray[14].background="url('2.png')";
+        bgArray[14]='2.png';
+        difArray[14]=true;
+        curArray[14]=styleArray[14];
+        styleArray[15].background="url('2.png')";
+        bgArray[15]='2.png';
+        difArray[15]=true;
+        curArray[15]=styleArray[15];
+      }else if (n==3) {
+        styleArray[5].background="url('3.png')";
+        bgArray[5]='3.png';
+        difArray[5]=true;
+        curArray[5]=styleArray[5];
+        styleArray[13].background="url('3.png')";
+        bgArray[13]='3.png';
+        difArray[13]=true;
+        curArray[13]=styleArray[13];
+        styleArray[14].background="url('3.png')";
+        bgArray[14]='3.png';
+        difArray[14]=true;
+        curArray[14]=styleArray[14];
+        styleArray[15].background="url('3.png')";
+        bgArray[15]='3.png';
+        difArray[15]=true;
+        curArray[15]=styleArray[15];
+      }else if (n==4) {
+        styleArray[4].background="url('4.png')";
+        bgArray[4]='4.png';
+        difArray[4]=true;
+        curArray[4]=styleArray[4];
+        styleArray[5].background="url('4.png')";
+        bgArray[5]='4.png';
+        difArray[5]=true;
+        curArray[5]=styleArray[5];
+        styleArray[14].background="url('4.png')";
+        bgArray[14]='4.png';
+        difArray[14]=true;
+        curArray[14]=styleArray[14];
+        styleArray[15].background="url('4.png')";
+        bgArray[15]='4.png';
+        difArray[15]=true;
+        curArray[15]=styleArray[15];
+      }else if (n==5) {
+        styleArray[13].background="url('5.png')";
+        bgArray[13]='5.png';
+        difArray[13]=true;
+        curArray[13]=styleArray[13];
+        styleArray[14].background="url('5.png')";
+        bgArray[14]='5.png';
+        difArray[14]=true;
+        curArray[14]=styleArray[14];
+        styleArray[4].background="url('5.png')";
+        bgArray[4]='5.png';
+        difArray[4]=true;
+        curArray[4]=styleArray[4];
+        styleArray[5].background="url('5.png')";
+        bgArray[5]='5.png';
+        difArray[5]=true;
+        curArray[5]=styleArray[5];
+      }else if (n==6) {
+        styleArray[13].background="url('6.png')";
+        bgArray[13]='6.png';
+        difArray[13]=true;
+        curArray[13]=styleArray[13];
+        styleArray[14].background="url('6.png')";
+        bgArray[14]='6.png';
+        difArray[14]=true;
+        curArray[14]=styleArray[14];
+        styleArray[15].background="url('6.png')";
+        bgArray[15]='6.png';
+        difArray[15]=true;
+        curArray[15]=styleArray[15];
+        styleArray[4].background="url('6.png')";
+        bgArray[4]='6.png';
+        difArray[4]=true;
+        curArray[4]=styleArray[4];
+      }else if (n==7) {
+        styleArray[3].background="url('7.png')";
+        bgArray[3]='7.png';
+        difArray[3]=true;
+        curArray[3]=styleArray[3];
+        styleArray[4].background="url('7.png')";
+        bgArray[4]='7.png';
+        difArray[4]=true;
+        curArray[4]=styleArray[4];
+        styleArray[14].background="url('7.png')";
+        bgArray[14]='7.png';
+        difArray[14]=true;
+        curArray[14]=styleArray[14];
+        styleArray[15].background="url('7.png')";
+        bgArray[15]='7.png';
+        difArray[15]=true;
+        curArray[15]=styleArray[15];
+      }
+    }
+    function fall(){
+
+    }
+
+    while (true) {
+      if(temp==true){
+        temp2=Math.floor(Math.random() * 7)+1;
+        spawnPiece(temp2);
+        temp=false;
+      }
+      
+    }
+      </script>
+</html>
