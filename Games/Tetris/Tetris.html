@@ -281,15 +281,19 @@
     var difArray=[];//stores all the numbers of blocks with a different
     var permArray=[];//stores all permanant blocks
     var curArray=[];//stores the ids of the current blocks
+    var curArray2=[];//sometimes curArray gets overwrited soooooooooo
     var count=0;
     var temp2;
     var temp=true;
+    var change=[];//stores the blocks to move
+    var change2=[];
     for(var i=1;i<21;i++){
       for(var r=1;r<11;r++){
         styleArray[count]=document.getElementById('r'+i+"_"+r).style;
         bgArray[count]="board.png";
-        difArray[count]=false
+        difArray[count]=false;
         curArray[count]=null;
+        curArray2[count]=null;
         count+=1;
       }
     }
@@ -416,16 +420,35 @@
       }
     }
     function fall(){
-      e
-    }
-
-    while (true) {
-      if(temp==true){
-        temp2=Math.floor(Math.random() * 7)+1;
-        spawnPiece(temp2);
-        temp=false;
+      count=0;
+      for(var i=1;i<200;i++){
+        if(curArray[i]!=null){
+          change[count]=curArray[i];
+          change2[count]=i;
+          count+=1;
+        }
       }
-
+      count=0;
+      for(i=0;i<200;i++){
+        curArray[i]=null;
+      }
+      for(var r=3;r>=0;r--){
+        temp2=change2[r];
+        styleArray[temp2+10].background=change[r].background;
+        styleArray[temp2].background="url('board.png')";
+        curArray[temp2+10]=styleArray[temp2+10];
+        bgArray[temp2+10]=bgArray[temp2];
+        bgArray[temp2]="board.png";
+        difArray[temp2+10]=difArray[temp2];
+        difArray[temp2]=false;
+      }
+      curArray=curArray2
+      for(i=0;i<200;i++){
+        curArray2[i]=null;
+      }
     }
+    spawnPiece(3);
+    fall();
+    fall();
       </script>
 </html>
