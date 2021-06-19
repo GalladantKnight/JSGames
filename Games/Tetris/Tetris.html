@@ -261,7 +261,7 @@
         <input class="btn" style="background:url('board.png') no-repeat" id="r20_9" type="button">
         <input class="btn" style="background:url('board.png') no-repeat" id="r20_10" type="button">
       </div>
-    <button type="button" name="start" id="start" ></button>
+    <button type="button" name="start" id="start" >ffdsa</button>
   </body>
   <script type="text/javascript">
     //NOTES:
@@ -322,7 +322,7 @@
         );
     });
 }
-    function spawnPiece(n){
+    function spawnPiece(n){//spawns a piece depending on the n thing
       if (n==1) {
         styleArray[3].background="url('1.png')";
         bgArray[3]='1.png';
@@ -443,8 +443,8 @@
         difArray[15]=true;
         curArray[15]=styleArray[15];
       }
-    }//spawns a piece depending on the n thing
-    function fall(){
+    }
+    function fall(){//makes the blocks in curArray fall
       count=0;
       for(var i=1;i<200;i++){
         if(curArray[i]!=null){
@@ -467,8 +467,32 @@
         difArray[temp2+10]=difArray[temp2];
         difArray[temp2]=false;
       }
-    }//makes the blocks in curArray fall
+    }
     function moveLeft(){//read the name bro
+      count=0;
+      for(var i=1;i<200;i++){
+        if(curArray[i]!=null){
+          change[count]=curArray[i];
+          change2[count]=i;
+          count+=1;
+        }
+      }
+      count=0;
+      for(i=0;i<200;i++){
+        curArray[i]=null;
+      }
+      for(var r=3;r>=0;r--){
+        temp2=change2[r];
+        styleArray[temp2-1].background=change[r].background;
+        styleArray[temp2].background="url('board.png')";
+        curArray[temp2-1]=styleArray[temp2-1];
+        bgArray[temp2-1]=bgArray[temp2];
+        bgArray[temp2]="board.png";
+        difArray[temp2-1]=difArray[temp2];
+        difArray[temp2]=false;
+      }
+    }
+    function moveRight(){//read the name bro
       count=0;
       for(var i=1;i<200;i++){
         if(curArray[i]!=null){
@@ -485,16 +509,12 @@
         temp2=change2[r];
         styleArray[temp2+1].background=change[r].background;
         styleArray[temp2].background="url('board.png')";
-        curArray[temp2+1]=styleArray[temp2+10];
+        curArray[temp2+1]=styleArray[temp2+1];
         bgArray[temp2+1]=bgArray[temp2];
         bgArray[temp2]="board.png";
         difArray[temp2+1]=difArray[temp2];
         difArray[temp2]=false;
       }
-      }//makes the blocks in curArray fall
-    }
-    function moveRight(){//read the name bro
-
     }
     function moveDown(){//read the name bro
 
