@@ -1,3 +1,2 @@
 # JSGames
-Javascript games
 bruh
